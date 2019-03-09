@@ -154,6 +154,7 @@
     <ClInclude Include="logger.hpp" />
     <ClInclude Include="luahooks.hpp" />
     <ClInclude Include="luastate.hpp" />
+    <ClInclude Include="qangle.h" />
     <ClInclude Include="sdk.hpp" />
     <ClInclude Include="singleton.hpp" />
     <ClInclude Include="utils.hpp" />

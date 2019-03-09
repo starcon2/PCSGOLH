@@ -159,5 +159,8 @@
     <ClInclude Include="logger.hpp">
       <Filter>utils\logger</Filter>
     </ClInclude>
+    <ClInclude Include="qangle.h">
+      <Filter>sdk\math</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -10,6 +10,7 @@
 
 // math
 #include "vector.h"
+#include "qangle.h"
 
 // interfaces
 #include "ibaseclient.hpp"

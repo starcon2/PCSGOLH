@@ -19,6 +19,11 @@ public:
 		return _pBaseEntity->GetAbsOrigin();
 	}
 
+	Vector GetAbsAngles()
+	{
+		return _pBaseEntity->GetAbsAngles();
+	}
+
 	int GetHealth()
 	{
 		return _pBaseEntity->GetHealth();
