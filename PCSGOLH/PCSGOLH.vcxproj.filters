@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="vmt.cpp">
+      <Filter>utils\vmt</Filter>
+    </ClCompile>
+    <ClCompile Include="loader.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="interfaces.cpp">
+      <Filter>loader\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="painttraverse.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="luastate.cpp">
+      <Filter>loader\luastate</Filter>
+    </ClCompile>
+    <ClCompile Include="binds.cpp">
+      <Filter>binds</Filter>
+    </ClCompile>
+    <ClCompile Include="createmove.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>utils\logger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="wrappers">
+      <UniqueIdentifier>{3faaa9ff-1d28-46ad-84ec-1e79fe7c648d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{5a5fa457-0027-4ba6-bf69-69c6b99363b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{8c79a7e3-3692-461a-ac0d-168a53e0f748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{8a1245a9-49b1-4ea5-b35f-b4467b5fae5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces">
+      <UniqueIdentifier>{b7671b22-8ab9-4f93-b6fe-ef166bb4096b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\classes">
+      <UniqueIdentifier>{9c34904e-d809-489c-9b05-6317116cd36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\math">
+      <UniqueIdentifier>{c2cb19a1-41b2-4c11-a83f-41a59c1d3b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\vmt">
+      <UniqueIdentifier>{8676a275-d9d7-4d23-a306-38569c5c1ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader">
+      <UniqueIdentifier>{84b15adc-295c-4e43-bf36-52fd8d3af0d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader\interfaces">
+      <UniqueIdentifier>{dacac470-e566-4943-9839-3eef48efe011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils">
+      <UniqueIdentifier>{6b323cbd-315f-4b5d-8f9e-83c9d55669cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader\luastate">
+      <UniqueIdentifier>{4652461b-0fc8-4086-9094-082a9504a91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="binds">
+      <UniqueIdentifier>{734cae63-7298-4995-b34f-5cdbf3d5d25d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\logger">
+      <UniqueIdentifier>{9d608ea1-d1f7-4b32-a2c3-06ed7a944f78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ibaseclient.hpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cpanel.hpp">
+      <Filter>sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="vmt.hpp">
+      <Filter>utils\vmt</Filter>
+    </ClInclude>
+    <ClInclude Include="loader.hpp">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.h">
+      <Filter>loader\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="isurface.hpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="color.hpp">
+      <Filter>sdk\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="luastate.hpp">
+      <Filter>loader\luastate</Filter>
+    </ClInclude>
+    <ClInclude Include="luahooks.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="binds.hpp">
+      <Filter>binds</Filter>
+    </ClInclude>
+    <ClInclude Include="drawmanagerwrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="iengine.hpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cglobalvars.hpp">
+      <Filter>sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ccliententitylist.hpp">
+      <Filter>sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cbaseentity.hpp">
+      <Filter>sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cusercmd.hpp">
+      <Filter>sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="cusercmdwrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="interfacewrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="enginewrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="cliententitylistwrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="baseentitywrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="utilswrapper.hpp">
+      <Filter>wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.hpp">
+      <Filter>utils\logger</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
