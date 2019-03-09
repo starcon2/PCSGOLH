@@ -95,7 +95,7 @@
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Rivendell\source\repos\PCSGOLH\PCSGOLH\lib\luabind-0.9.1;C:\Users\Rivendell\source\repos\PCSGOLH\PCSGOLH\lib\boost-1.47.0;C:\Users\Rivendell\source\repos\PCSGOLH\PCSGOLH\lib\lua-5.2.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)PCSGOLH\lib\luabind-0.9.1;$(SolutionDir)PCSGOLH\lib\boost-1.47.0;$(SolutionDir)PCSGOLH\lib\lua-5.2.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <StringPooling>true</StringPooling>
     </ClCompile>
     <Link>
