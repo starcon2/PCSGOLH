@@ -4,12 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCSGOLH", "PCSGOLH\PCSGOLH.vcxproj", "{34FD7845-8669-48AB-966A-55CD9877EAAE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E991A506-FB9F-409F-A5AA-5ADBA7830A66} = {E991A506-FB9F-409F-A5AA-5ADBA7830A66}
+		{E9348E86-8A1F-4A11-96BC-9ABF11E15D0D} = {E9348E86-8A1F-4A11-96BC-9ABF11E15D0D}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Injector", "Injector\Injector.vcxproj", "{5A895D27-CD85-4D7D-ABE0-554C174244CB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lua", "PCSGOLH\lib\lua-5.2.0\Lua.vcxproj", "{E9348E86-8A1F-4A11-96BC-9ABF11E15D0D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LuaBind", "PCSGOLH\lib\luabind-0.9.1\LuaBind.vcxproj", "{E991A506-FB9F-409F-A5AA-5ADBA7830A66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9348E86-8A1F-4A11-96BC-9ABF11E15D0D} = {E9348E86-8A1F-4A11-96BC-9ABF11E15D0D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
