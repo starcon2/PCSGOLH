@@ -4,6 +4,7 @@
 
 #include <luabind/luabind.hpp>
 #include <luabind/operator.hpp>
+#include <luabind/exception_handler.hpp>
 
 #include "luahooks.hpp"
 

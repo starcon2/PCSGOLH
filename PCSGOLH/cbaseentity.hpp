@@ -12,7 +12,7 @@ public:
 	
 	Vector GetViewOffset()
 	{
-		return *reinterpret_cast<Vector*>(uintptr_t(this) + 0x108);
+		return *reinterpret_cast<Vector*>(uintptr_t(this) + 0x108); // m_vecViewOffset
 	}
 	
 	Vector & GetAbsOrigin()
@@ -29,12 +29,12 @@ public:
 	
 	int GetLifeState()
 	{
-		return *reinterpret_cast<int*>(uintptr_t(this) + 0x25F);
+		return *reinterpret_cast<int*>(uintptr_t(this) + 0x25F); // m_lifeState 
 	}
 
 	int GetFlags()
 	{
-		return *reinterpret_cast<int*>(uintptr_t(this) + 0x104);
+		return *reinterpret_cast<int*>(uintptr_t(this) + 0x104); // m_fFlags 
 	}
 	
 	bool IsAlive()
@@ -44,7 +44,7 @@ public:
 
 	int GetHealth()
 	{
-		return *reinterpret_cast<int*>(uintptr_t(this) + 0x100);
+		return *reinterpret_cast<int*>(uintptr_t(this) + 0x100); // m_iHealth 
 	}
 	
 	void GetRenderBounds(Vector& mins, Vector& maxs)
@@ -56,7 +56,7 @@ public:
 	
 	int GetTeam()
 	{
-		return *reinterpret_cast<int*>(uintptr_t(this) + 0xF4);
+		return *reinterpret_cast<int*>(uintptr_t(this) + 0xF4); // m_iTeamNum 
 	}
 	
 	bool IsDormant()
@@ -66,12 +66,12 @@ public:
 	
 	Vector GetVecOrigin()
 	{
-		return *reinterpret_cast<Vector*>(uintptr_t(this) + 0x138);
+		return *reinterpret_cast<Vector*>(uintptr_t(this) + 0x138); // m_vecOrigin 
 	}
 	
 	Vector GetEyePosition(void)
 	{
-		return GetVecOrigin() + *(Vector*)((DWORD)this + 0x108);
+		return GetVecOrigin() + *(Vector*)((DWORD)this + 0x108); // m_vecViewOffset
 	}
 	
 	Vector GetPunchAngles()
