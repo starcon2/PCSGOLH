@@ -26,7 +26,7 @@ namespace Loader
 
 		Logger::append(Logger::kLogType::SUCCESS, "Loading script...\n");
 
-		if (luaL_dofile(LuaState::pLuaState, "D:\\Development\\main.lua") != 0)
+		if (luaL_dofile(LuaState::pLuaState, SCRIPT_DIR) != 0)
 		{
 			Logger::append(Logger::kLogType::ERROR, "Error: %s\n", lua_tostring(LuaState::pLuaState, -1));
 			return;

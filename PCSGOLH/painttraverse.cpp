@@ -3,7 +3,7 @@
 
 int _p;
 
-void _() 
+void _() // :)
 {
 	Logger::append(Logger::kLogType::NORMAL, "Reloading script...\n");
 	LuaState::gHooks.Reset();
@@ -11,7 +11,7 @@ void _()
 	LuaState::initialize();
 	Binds::initialize();
 
-	if (luaL_dofile(LuaState::pLuaState, "D:\\Development\\main.lua") != 0)
+	if (luaL_dofile(LuaState::pLuaState, SCRIPT_DIR) != 0)
 	{
 		Logger::append(Logger::kLogType::ERROR, "Error: %s\n", lua_tostring(LuaState::pLuaState, -1));
 		return;
