@@ -92,16 +92,31 @@ namespace Binds
 				.def("WorldToScreen", &UtilsWrapper::WorldToScreen)
 		];
 
-		luabind::globals(LuaState::pLuaState)["HOOK_PAINTTRAVERSE"] = LuaHooks::HookType::HOOK_PAINTTRAVERSE;
-		luabind::globals(LuaState::pLuaState)["HOOK_CREATEMOVE"] = LuaHooks::HookType::HOOK_CREATEMOVE;
+		try
+		{
+			luabind::globals(LuaState::pLuaState)["HOOK_PAINTTRAVERSE"] = LuaHooks::HookType::HOOK_PAINTTRAVERSE;
+			luabind::globals(LuaState::pLuaState)["HOOK_CREATEMOVE"] = LuaHooks::HookType::HOOK_CREATEMOVE;
 
-		luabind::globals(LuaState::pLuaState)["FL_ONGROUND"] = FL_ONGROUND;
-		luabind::globals(LuaState::pLuaState)["FL_DUCKING"] = FL_DUCKING;
-		luabind::globals(LuaState::pLuaState)["IN_JUMP"] = IN_JUMP;
+			luabind::globals(LuaState::pLuaState)["FL_ONGROUND"] = FL_ONGROUND;
+			luabind::globals(LuaState::pLuaState)["FL_DUCKING"] = FL_DUCKING;
+			luabind::globals(LuaState::pLuaState)["IN_JUMP"] = IN_JUMP;
 
-		luabind::globals(LuaState::pLuaState)["Interfaces"] = &interfacesWrapper;
-		luabind::globals(LuaState::pLuaState)["DrawManager"] = &drawManagerWrapper;
-		luabind::globals(LuaState::pLuaState)["Utils"] = &utilsWrapper;
-		luabind::globals(LuaState::pLuaState)["Hooks"] = &LuaState::gHooks;
+			luabind::globals(LuaState::pLuaState)["Interfaces"] = &interfacesWrapper;
+			luabind::globals(LuaState::pLuaState)["DrawManager"] = &drawManagerWrapper;
+			luabind::globals(LuaState::pLuaState)["Utils"] = &utilsWrapper;
+			luabind::globals(LuaState::pLuaState)["Hooks"] = &LuaState::gHooks;
+
+			Logger::append(Logger::kLogType::SUCCESS, "Loading script...\n");
+
+			if (luaL_dofile(LuaState::pLuaState, SCRIPT_DIR) != 0)
+			{
+				Logger::append(Logger::kLogType::ERROR, "Error: %s\n", lua_tostring(LuaState::pLuaState, -1));
+				return;
+			}
+		}
+		catch (const std::exception& TheError)
+		{
+			Logger::append(Logger::kLogType::ERROR, "Error: %s\n", TheError.what());
+		}
 	}
 }

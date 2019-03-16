@@ -11,12 +11,6 @@ void _() // :)
 	LuaState::initialize();
 	Binds::initialize();
 
-	if (luaL_dofile(LuaState::pLuaState, SCRIPT_DIR) != 0)
-	{
-		Logger::append(Logger::kLogType::ERROR, "Error: %s\n", lua_tostring(LuaState::pLuaState, -1));
-		return;
-	}
-
 	Logger::append(Logger::kLogType::SUCCESS, "Reloaded!\n");
 }
 
