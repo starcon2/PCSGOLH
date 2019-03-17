@@ -9,4 +9,8 @@ namespace Hooks
 
 	void __fastcall PaintTraverse(PVOID pPanels, int edx, unsigned int vguiPanel, bool bForceRepaint, bool bAllowForce);
 	bool __stdcall CreateMove(float sample_input_frametime, CUserCmd* pCmd);
+
+	extern WNDPROC gWindowProc;
+
+	HRESULT __stdcall NewWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 }

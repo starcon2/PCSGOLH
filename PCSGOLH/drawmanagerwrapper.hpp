@@ -11,7 +11,7 @@ public:
 	unsigned long CreateNewFont(const char* fontFace, int size, bool bold, bool italic, bool outlined, bool dropShadow) 
 	{
 		unsigned long font = Interfaces::pSurface->SCreateFont();
-		int flags = (italic ? 0 : 0) | (outlined ? 0 : 0) | (dropShadow ? 0 : 0);
+		int flags = (italic ? 0x001 : 0) | (outlined ? 0x200 : 0) | (dropShadow ? 0x080 : 0);
 		Interfaces::pSurface->SetFontGlyphSet(font, fontFace, size, bold ? FW_BOLD : 0, 0, 0, flags);
 		
 		return font;

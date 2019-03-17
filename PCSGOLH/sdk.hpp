@@ -1,11 +1,12 @@
 #pragma once
 
-#define SCRIPT_DIR "X:\\change\\me\\please\\script.lua"
+#define SCRIPT_DIR "D:\\Development\\main.lua"
 
 // others
 #include "utils.hpp"
 #include "vmt.hpp"
 #include "color.hpp"
+#include "events.h"
 
 #include "luastate.hpp"
 #include "logger.hpp"
@@ -26,7 +27,7 @@
 #include "cbaseentity.hpp"
 #include "ccliententitylist.hpp"
 
-#define	FL_ONGROUND					(1 << 0)	
+#define	FL_ONGROUND					(1 << 0)
 #define FL_DUCKING					(1 << 1)
 
 #define IN_ATTACK					(1 << 0)
@@ -45,11 +46,11 @@
 #define IN_RELOAD					(1 << 13)
 #define IN_ALT1						(1 << 14)
 #define IN_ALT2						(1 << 15)
-#define IN_SCORE					(1 << 16)   
-#define IN_SPEED					(1 << 17)	
-#define IN_WALK						(1 << 18)	
-#define IN_ZOOM						(1 << 19)	
-#define IN_WEAPON1					(1 << 20)	
+#define IN_SCORE					(1 << 16)
+#define IN_SPEED					(1 << 17)
+#define IN_WALK						(1 << 18)
+#define IN_ZOOM						(1 << 19)
+#define IN_WEAPON1					(1 << 20)
 #define IN_WEAPON2					(1 << 21)
 #define IN_BULLRUSH					(1 << 22)
 #define IN_GRENADE1					(1 << 23)

@@ -6,68 +6,68 @@ class BaseEntityWrapper
 public:
 	BaseEntityWrapper(CBaseEntity* pBaseEntity)
 	{
-		_pBaseEntity = pBaseEntity;
+		m_pBaseEntity = pBaseEntity;
 	}
 
 	bool IsValid() 
 	{
-		return _pBaseEntity != nullptr;
+		return m_pBaseEntity != nullptr;
 	}
 
 	Vector GetAbsOrigin() 
 	{
-		return _pBaseEntity->GetAbsOrigin();
+		return m_pBaseEntity->GetAbsOrigin();
 	}
 
 	Vector GetAbsAngles()
 	{
-		return _pBaseEntity->GetAbsAngles();
+		return m_pBaseEntity->GetAbsAngles();
 	}
 
 	int GetHealth()
 	{
-		return _pBaseEntity->GetHealth();
+		return m_pBaseEntity->GetHealth();
 	}
 
 	int GetFlags() 
 	{
-		return _pBaseEntity->GetFlags();
+		return m_pBaseEntity->GetFlags();
 	}
 
 	Vector GetEyePos()
 	{
-		return _pBaseEntity->GetEyePosition();
+		return m_pBaseEntity->GetEyePosition();
 	}
 
 	bool IsDormant() 
 	{
-		return _pBaseEntity->IsDormant();
+		return m_pBaseEntity->IsDormant();
 	}
 
 	bool IsAlive() 
 	{
-		return _pBaseEntity->IsAlive();
+		return m_pBaseEntity->IsAlive();
 	}
 
 	int GetTeam() 
 	{
-		return _pBaseEntity->GetTeam();
+		return m_pBaseEntity->GetTeam();
 	}
 
 	int GetClassId()
 	{
-		return _pBaseEntity->GetClientClass()->m_ClassID;
+		return m_pBaseEntity->GetClientClass()->m_ClassID;
 	}
 
 	Vector GetPunchAngles() 
 	{
-		return _pBaseEntity->GetPunchAngles();
+		return m_pBaseEntity->GetPunchAngles();
 	}
 	
 	operator CBaseEntity*() 
 	{
-		return _pBaseEntity;
+		return m_pBaseEntity;
 	}
 private:
-	CBaseEntity* _pBaseEntity;
+	CBaseEntity* m_pBaseEntity;
 };

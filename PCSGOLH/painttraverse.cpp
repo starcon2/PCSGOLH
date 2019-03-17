@@ -47,7 +47,16 @@ namespace Hooks
 			{
 				auto v = LuaState::gHooks.GetCallbacks(LuaHooks::HookType::HOOK_PAINTTRAVERSE);
 				for (auto it = v.begin(); it != v.end(); it++)
-					luabind::call_function<void>(*it, vguiPanel);
+				{
+					try
+					{
+						luabind::call_function<void>(*it, vguiPanel);
+					}
+					catch (const std::exception& TheError)
+					{
+						Logger::append(Logger::kLogType::ERROR, "Error inside PaintTraverse Hook: %s\n", lua_tostring(LuaState::pLuaState, -1));
+					}
+				}
 			}
 		}
 	}

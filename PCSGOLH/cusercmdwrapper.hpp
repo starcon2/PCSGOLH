@@ -8,52 +8,52 @@ class CUserCMDWrapper
 public:
 	CUserCMDWrapper(CUserCmd* cmd) 
 	{
-		pCmd = cmd;
+		m_pCmd = cmd;
 	}
 	int GetButtons() 
 	{
-		return pCmd->buttons;
+		return m_pCmd->buttons;
 	}
 	int GetTickCount()
 	{
-		return pCmd->tick_count;
+		return m_pCmd->tick_count;
 	}
 	Vector GetViewAngles() 
 	{
-		return pCmd->viewangles;
+		return m_pCmd->viewangles;
 	}
 	float GetForwardMove() 
 	{
-		return pCmd->forwardmove;
+		return m_pCmd->forwardmove;
 	}
 	float GetSideMove() 
 	{
-		return pCmd->sidemove;
+		return m_pCmd->sidemove;
 	}
 	float GetUpMove() 
 	{
-		return pCmd->upmove;
+		return m_pCmd->upmove;
 	}
 	void SetButtons(int buttons) 
 	{
-		pCmd->buttons = buttons;
+		m_pCmd->buttons = buttons;
 	}
 	void SetViewAngles(Vector va) 
 	{
-		pCmd->viewangles = va;
+		m_pCmd->viewangles = va;
 	}
 	void SetForwardMove(float f) 
 	{
-		pCmd->forwardmove = f;
+		m_pCmd->forwardmove = f;
 	}
 	void SetSideMove(float f) 
 	{
-		pCmd->sidemove = f;
+		m_pCmd->sidemove = f;
 	}
 	void SetUpMove(float f) 
 	{
-		pCmd->upmove = f;
+		m_pCmd->upmove = f;
 	}
 private:
-	CUserCmd* pCmd;
+	CUserCmd* m_pCmd;
 };

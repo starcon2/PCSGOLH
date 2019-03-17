@@ -29,6 +29,9 @@
     <ClCompile Include="logger.cpp">
       <Filter>utils\logger</Filter>
     </ClCompile>
+    <ClCompile Include="wndproc.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="wrappers">
@@ -161,6 +164,9 @@
     </ClInclude>
     <ClInclude Include="qangle.h">
       <Filter>sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="events.h">
+      <Filter>utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -130,6 +130,7 @@
     <ClCompile Include="painttraverse.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="vmt.cpp" />
+    <ClCompile Include="wndproc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="baseentitywrapper.hpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="cusercmdwrapper.hpp" />
     <ClInclude Include="drawmanagerwrapper.hpp" />
     <ClInclude Include="enginewrapper.hpp" />
+    <ClInclude Include="events.h" />
     <ClInclude Include="hooks.hpp" />
     <ClInclude Include="ibaseclient.hpp" />
     <ClInclude Include="iengine.hpp" />

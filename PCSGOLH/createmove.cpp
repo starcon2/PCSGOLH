@@ -21,7 +21,16 @@ namespace Hooks
 			{
 				auto v = LuaState::gHooks.GetCallbacks(LuaHooks::HookType::HOOK_CREATEMOVE);
 				for (auto it = v.begin(); it != v.end(); it++)
-					luabind::call_function<void>(*it, CUserCMDWrapper(pCmd));
+				{
+					try
+					{
+						luabind::call_function<void>(*it, CUserCMDWrapper(pCmd));
+					}
+					catch (const std::exception& TheError)
+					{
+						Logger::append(Logger::kLogType::ERROR, "Error inside CreateMove Hook: %s\n", lua_tostring(LuaState::pLuaState, -1));
+					}
+				}
 			}
 		}
 

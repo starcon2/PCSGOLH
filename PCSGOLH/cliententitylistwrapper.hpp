@@ -11,7 +11,8 @@ public:
 		m_pEntityList = pEntityList;
 	}
 
-	BaseEntityWrapper GetEntityFromIndex(int index) {
+	BaseEntityWrapper GetEntityFromIndex(int index) 
+	{
 		return BaseEntityWrapper((CBaseEntity*)Interfaces::pEntityList->GetClientEntity(index));
 	}
 
