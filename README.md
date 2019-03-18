@@ -5,6 +5,8 @@ PCSGOLH - Pointless Counter-Strike: Global Offensive Lua Hooks. A open-source Lu
 
 ## Getting Started
 
+NOTE: THIS IS NOT THE OFFICAL BRANCH, THIS IS MY PERSONAL FORK
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 *(Documentation still not finished)*
 
