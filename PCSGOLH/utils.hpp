@@ -14,4 +14,5 @@ namespace Utils
 {
 	void* findInterface(const char* kModule, const char* kName);
 	bool worldToScreen(Vector &in, Vector &out);
+	Vector CalcAngle(Vector src, Vector dst);
 }

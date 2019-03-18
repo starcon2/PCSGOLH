@@ -59,6 +59,10 @@ public:
 		return m_pBaseEntity->GetClientClass()->m_ClassID;
 	}
 
+	int GetIndex()
+	{
+		return m_pBaseEntity->GetIndex();
+	}
 	Vector GetPunchAngles() 
 	{
 		return m_pBaseEntity->GetPunchAngles();

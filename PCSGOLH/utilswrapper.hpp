@@ -9,4 +9,8 @@ public:
 	{
 		return Utils::worldToScreen(in, out);
 	}
+	Vector CalcAngle(Vector src, Vector dst) 
+	{
+		return Utils::CalcAngle(src, dst);
+	}
 };

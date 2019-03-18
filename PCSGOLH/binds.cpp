@@ -76,6 +76,8 @@ namespace Binds
 				.def("GetClassId", &BaseEntityWrapper::GetClassId)
 				.def("IsDormant", &BaseEntityWrapper::IsDormant)
 				.def("GetEyePos", &BaseEntityWrapper::GetEyePos)
+				.def("GetTeam", &BaseEntityWrapper::GetTeam)
+				.def("GetIndex", &BaseEntityWrapper::GetIndex)
 				.def("GetPunchAngles", &BaseEntityWrapper::GetPunchAngles),
 			luabind::class_<EngineWrapper>("EngineWrapper")
 				.def("IsInGame", &EngineWrapper::IsInGame)
@@ -93,7 +95,8 @@ namespace Binds
 				.def("SetViewAngles", &CUserCMDWrapper::SetViewAngles)
 				.property("Buttons", &CUserCMDWrapper::GetButtons, &CUserCMDWrapper::SetButtons),
 			luabind::class_<UtilsWrapper>("__Utils")
-				.def("WorldToScreen", &UtilsWrapper::WorldToScreen),
+				.def("WorldToScreen", &UtilsWrapper::WorldToScreen)
+				.def("CalcAngle", &UtilsWrapper::CalcAngle),
 			luabind::class_<Events::EventMouse>("EventMouse")
 				.property("X", &Events::EventMouse::GetX)
 				.property("Y", &Events::EventMouse::GetY)

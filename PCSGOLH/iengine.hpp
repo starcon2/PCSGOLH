@@ -61,4 +61,7 @@ public:
 		typedef int(__thiscall* Fn)(void*);
 		return ((Fn)callClass<Fn>(this, 12))(this);
 	}
+
+
+
 };
