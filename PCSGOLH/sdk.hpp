@@ -1,6 +1,6 @@
 #pragma once
 
-#define SCRIPT_DIR "D:\\Development\\main.lua"
+#define SCRIPT_DIR "X:\\change\\me\\please\\script.lua"
 
 // others
 #include "utils.hpp"
